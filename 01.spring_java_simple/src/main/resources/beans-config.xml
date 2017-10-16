@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<!-- bean configuration -->
+	<!-- scope="singleton(기본), prototype, request, session" -->
+	<bean id="messageBean" class="work.dto.MessageBean" scope="prototype">
+		<constructor-arg index="0" value="01 Java DataBase" />
+		<constructor-arg index="1" value="02 Spring Framework" />
+ 		
+ 		<property name="message" value="스프링 프레임 워크 최고래"/>
+ 		<property name="courseName">
+ 			<value>자바 및 데이터베이스</value>
+ 		</property>
+ 	</bean>
+</beans>
